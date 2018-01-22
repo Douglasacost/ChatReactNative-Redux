@@ -1,10 +1,11 @@
 import { Map } from 'immutable';
 import * as types from '../actions/types';
+import initial from './state';
 
-export default function(state = Map({ text: 'Original text' }), action){
+export default function(state = initial.get('starter'), action){
     switch (action.type) {
-        case types.START:
-            return state.set('text', action.payload);   
+        case types.SET_NAME:
+            return state.set('name', action.payload);   
         default:
             return state;
     }

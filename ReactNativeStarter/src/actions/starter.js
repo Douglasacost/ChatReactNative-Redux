@@ -1,6 +1,6 @@
 import * as types from './types';
 
-export const start = payload => ({
-  type: types.START,
+export const setName = payload => ({
+  type: types.SET_NAME,
   payload,
 });

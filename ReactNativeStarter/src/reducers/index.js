@@ -1,4 +1,5 @@
 import { combineReducers } from 'redux';
-import * as starterReducer from './starter';
+import starter from './starter';
+import chat from './chat';
 
-export default combineReducers(starterReducer);
+export default combineReducers({ starter, chat });

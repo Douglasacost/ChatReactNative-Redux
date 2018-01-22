@@ -6,11 +6,11 @@
 
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
-
+import { AppRegistry } from 'react-native';
 
 import store from './src/store';
 import AppContainer from './src/containers/AppContainer';
-
+console.ignoredYellowBox = ['Setting a timer'];
 export default class App extends Component {
   render() {
     return (
@@ -21,3 +21,4 @@ export default class App extends Component {
   }
 }
 
+AppRegistry.registerComponent('Chat', () => App);
